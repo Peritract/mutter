@@ -48,5 +48,5 @@ app.use(errors.return500);
 
 /* Start the Server */
 
-app.listen(process.env.port || 3000, '0.0.0.0');
-console.log("Server listening on port " + (process.env.port || 3000));
+app.listen(process.env.PORT || 3000, '0.0.0.0');
+console.log("Server listening on port " + (process.env.PORT || 3000));
