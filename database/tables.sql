@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS users (
+	user_id SERIAL PRIMARY KEY,
+	user_name VARCHAR(30) UNIQUE NOT NULL CHECK (LENGTH(user_name) >= 5),
+	user_password CHAR(60) NOT NULL,
+	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW() 
+);
